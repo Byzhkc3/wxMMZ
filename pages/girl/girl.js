@@ -1,20 +1,20 @@
 Page({
-  data:{
-    // text:"这是一个页面"
-  },
-  onLoad:function(options){
-    // 页面初始化 options为页面跳转所带来的参数
-  },
-  onReady:function(){
-    // 页面渲染完成
-  },
-  onShow:function(){
-    // 页面显示
-  },
-  onHide:function(){
-    // 页面隐藏
-  },
-  onUnload:function(){
-    // 页面关闭
-  }
+    data: {
+        resData: []
+    },
+    onReady: function() {
+      const that = this;
+      //请求接口
+      wx.request({
+          url: 'http://gank.io/api/random/data/%E7%A6%8F%E5%88%A9/25',
+          success: function(res) {
+              console.log(res.data.results);
+              that.setData({
+                  resData: res.data.results
+              })
+          }
+      })
+
+    }
+
 })

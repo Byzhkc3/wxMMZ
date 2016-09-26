@@ -20,6 +20,9 @@
     }, {
       "pagePath": "pages/fun/fun",
       "text": "趣图"
+    }, {
+      "pagePath": "pages/girl/girl",
+      "text": "妹子图"
     }]
   }
 }

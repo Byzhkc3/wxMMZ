@@ -7,7 +7,7 @@ Page({
       //请求接口
       wx.request({
           url: 'http://v.juhe.cn/joke/randJoke.php?key=\
-          &type=pic',
+          df9dd54f46be6ad558f4bba85879df46&type=pic',
           success: function(res) {
               // console.log(res.data.result);
               that.setData({
