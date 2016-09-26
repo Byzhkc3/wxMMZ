@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="index">
+  <view class="body">
+    <view class="card" wx:for="{{resData}}">
+      <view class="content">
+        {{item.content}}
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,25 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/fun/fun",
+    "pages/girl/girl"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "borderStyle":"white",
+    "selectedColor": "#4078c0",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "段子"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "text": "趣图"
+    }]
+  }
+}
