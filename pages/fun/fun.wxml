@@ -1,6 +1,11 @@
-<!--logs.wxml-->
-<view class="container log-list">
-  <block wx:for-items="{{logs}}" wx:for-item="log">
-    <text class="log-item">{{index + 1}}. {{log}}</text>
-  </block>
+<!--fun.wxml-->
+<view class="index">
+  <view class="body">
+    <view class="card" wx:for="{{resData}}">
+      <view class="content">
+        {{item.content}}
+          <image class="img_wrap" src="{{item.url}}" background-size="cover"></image>
+      </view>
+    </view>
+  </view>
 </view>
